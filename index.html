@@ -3,7 +3,7 @@
   <meta name="theme-color" content="#fff">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,
                                  maximum-scale=1.0, user-scalable=no">
-  <title>yandex.ru</title>
+  <title>Boris Tsyganov</title>
   <style>/* Copyright 2017 The Chromium Authors. All rights reserved.
  * Use of this source code is governed by a BSD-style license that can be
  * found in the LICENSE file. */
@@ -5211,8 +5211,7 @@ Horizon.prototype = {
       <div class="icon icon-offline" jseval="updateIconClass(this.classList, iconClass)" alt="" jstcache="1" style="visibility: hidden;"></div>
       <div id="main-message" jstcache="0">
         <h1 jstcache="0">
-          <span jsselect="heading" jsvalues=".innerHTML:msg" jstcache="10">Нет подключения к Интернету</span>
-          <a id="error-information-button" class="hidden" onclick="toggleErrorInformationPopup();" jstcache="0"></a>
+          <span jsselect="heading" jsvalues=".innerHTML:msg" jstcache="10">Boris Tsyganov</span>
         </h1>
         <p jsselect="summary" jsvalues=".innerHTML:msg" jstcache="2">Нет подключения к Интернету</p>
         <!--The suggestion list and error code are normally presented inline,
@@ -5224,12 +5223,15 @@ Horizon.prototype = {
             <div id="error-information-popup-box" jstcache="0">
               <div id="error-information-popup-content" jstcache="0">
                 <div id="suggestions-list" style="" jsdisplay="(suggestionsSummaryList &amp;&amp; suggestionsSummaryList.length)" jstcache="17">
-                  <p jsvalues=".innerHTML:suggestionsSummaryListHeader" jstcache="19">Попробуйте сделать следующее:</p>
+                  <p jsvalues=".innerHTML:suggestionsSummaryListHeader" jstcache="19">Software engineer at <a href="https://i-novus.ru">I-Novus</a></p>
+                  <p jsvalues=".innerHTML:suggestionsSummaryListHeader" jstcache="19">Have expertise in</p>
                   <ul jsvalues=".className:suggestionsSummaryList.length == 1 ? 'single-suggestion' : ''" jstcache="20" class="">
-                    <li jsselect="suggestionsSummaryList" jsvalues=".innerHTML:summary" jstcache="22" jsinstance="0">Проверьте сетевые кабели, модем и маршрутизатор.</li><li jsselect="suggestionsSummaryList" jsvalues=".innerHTML:summary" jstcache="22" jsinstance="*1">Подключитесь к сети Wi-Fi ещё раз.</li>
+                    <li jsselect="suggestionsSummaryList" jsvalues=".innerHTML:summary" jstcache="22" jsinstance="0">Web development</li>
+                    <li jsselect="suggestionsSummaryList" jsvalues=".innerHTML:summary" jstcache="22" jsinstance="*1">Java</li>
+                    <li jsselect="suggestionsSummaryList" jsvalues=".innerHTML:summary" jstcache="22" jsinstance="*1">Spring Framework</li>
                   </ul>
                 </div>
-                <div class="error-code" jscontent="errorCode" jstcache="18">ERR_INTERNET_DISCONNECTED</div>
+                <div class="error-code" jscontent="errorCode" jstcache="18">PERSONAL_PAGE</div>
                 <p id="error-information-popup-close" jstcache="0">
                   <a class="link-button" jscontent="closeDescriptionPopup" onclick="toggleErrorInformationPopup();" jstcache="21">null</a>
                 </p>
@@ -5273,6 +5275,11 @@ Horizon.prototype = {
         </div>
       </div>
     </div>
+    <div id="my-buttons" class="nav-wrapper suggested-left">
+          <button id="github-link-button" style="float: left;" onclick="location.href='https://github.com/btsyganov'" class="blue-button text-button">Github</button>
+          <button id="cv-link-button" style="float: left; margin-left: 10px;" onclick="location.href='http://btsyganov.com/btsyganov.pdf'" class="secondary-button text-button">CV</button>
+    </div>
+
     <div id="buttons" class="nav-wrapper suggested-left" jstcache="0">
       <div id="control-buttons" hidden="" jstcache="0">
         <button id="reload-button" class="blue-button text-button" onclick="trackClick(this.trackingId);
@@ -5280,7 +5287,7 @@ Horizon.prototype = {
         <button id="download-button" class="blue-button text-button" onclick="downloadButtonClick()" jsselect="downloadButton" jscontent="msg" jsvalues=".disabledText:disabledMsg" jstcache="7" style="display: none;">
         </button>
       </div>
-      <button id="details-button" class="secondary-button text-button small-link singular" onclick="detailsButtonClick(); toggleHelpBox()" jscontent="details" jsdisplay="(suggestionsDetails &amp;&amp; suggestionsDetails.length > 0) || diagnose" jsvalues=".detailsText:details; .hideDetailsText:hideDetails;" jstcache="3" style="display: none;"></button>
+      <button id="details-button" class="secondary-button text-button small-link singular" onclick="detailsButtonClick(); toggleHelpBox()" jscontent="details" jsdisplay="(suggestionsDetails &amp;&amp; suggestionsDetails.length > 0) || diagnose" jsvalues=".detailsText:details; .hideDetailsText:hideDetails;" jstcache="3" style="display: none;" jsselect="reloadButton" ></button>
     </div>
     <div id="details" class="hidden" jstcache="0">
       <div class="suggestions" jsselect="suggestionsDetails" jstcache="4" jsinstance="*0" style="display: none;">
